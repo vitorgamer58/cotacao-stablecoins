@@ -1,67 +1,39 @@
 <body>
-	<h1>O preço médio ponderado é de: R$ <?=number_format($preco_ponderado, 2, ',', '.')?></h1>
 	<table>
 	<tbody>
 		<tr><th colspan="4">Preços por Exchange</th></tr>
 		<tr>
-			<td>Exchange</td>
+			<td>Moeda</td>
 			<td>Preço</td>
 			<td>Volume</td>
-			<td></td>
+			<td>%</td>
 		</tr>
 		<tr>
-			<td>Braziliex</td>
-			<td>R$: <?=number_format($braziliex_price, 2, ',', '.')?></td>
-			<td><?=number_format($braziliex_volume, 2, ',', '.')?></td>
-			<td><?=$pbraziliex?>%</td>
+			<td>USDT</td>
+			<td>US$: <?=number_format($usdt_price, 2, '.', ',')?></td>
+			<td><?=number_format($usdt_volume, 2, '.', ',')?></td>
+			<td><?=$c_usdt?>%</td>
 		</tr>
 		<tr>
-			<td>Bitcoin Trade</td>
-			<td>R$: <?=number_format($bitcointrade_price, 2, ',', '.')?></td>
-			<td><?=number_format($bitcointrade_volume, 2, ',', '.')?></td>
-			<td><?=$pbitcointrade?>%</td>
+			<td>TUSD</td>
+			<td>US$: <?=number_format($tusd_price, 2, '.', ',')?></td>
+			<td><?=number_format($tusd_volume, 2, '.', ',')?></td>
+			<td><?=$c_tusd?>%</td>
 		</tr>
 		<tr>
-			<td>Walltime</td>
-			<td>R$: <?=number_format($walltime_price, 2, ',', '.')?></td>
-			<td><?=number_format($walltime_volume, 2, ',', '.')?></td>
-			<td><?=$pwalltime?>%</td>
+			<td>DAI</td>
+			<td>US$: <?=number_format($dai_price, 2, '.', ',')?></td>
+			<td><?=number_format($dai_volume, 2, '.', ',')?></td>
+			<td><?=$c_dai?>%</td>
 		</tr>
 		<tr>
-			<td>Bitcoin to you</td>
-			<td>R$: <?=number_format($bitcointoyou_price, 2, ',', '.')?></td>
-			<td><?=number_format($bitcointoyou_volume, 2, ',', '.')?></td>
-			<td><?=$pbitcointoyou?>%</td>
+			<td>Valores mais próximos de US$ 1.00 e 100% significa uma stablecoins mais forte, cumprindo o papel ao qual foi designada, ser uma moeda estável com lastro em dólar.</td>
 		</tr>
 		<tr>
-			<td>Mercado Bitcoin</td>
-			<td>R$: <?=number_format($mercadobitcoin_price, 2, ',', '.')?></td>
-			<td><?=number_format($mercadobitcoin_volume, 2, ',', '.')?></td>
-			<td><?=$pmercadobitcoin?>%</td>
+			<td>Powered by: Coinlib API</td>
 		</tr>
-		<tr>
-			<td>Flow BTC</td>
-			<td>R$: <?=number_format($flowbtc_price, 2, ',', '.')?></td>
-			<td><?=number_format($flowbtc_volume, 2, ',', '.')?></td>
-			<td><?=$pflowbtc?>%</td>
-		</tr>
-		<tr>
-			<td>Negocie Coins</td>
-			<td>R$: <?=number_format($negocie_price, 2, ',', '.')?></td>
-			<td><?=number_format($negocie_vol, 2, ',', '.')?></td>
-			<td>*</td>
-		</tr>
-		<tr>
-			<td>TemBTC</td>
-			<td>R$: <?=number_format($tembtc_price, 2, ',', '.')?></td>
-			<td><?=number_format($tembtc_vol, 2, ',', '.')?></td>
-			<td>*</td>
-		</tr>
-			<td colspan="4" id='total'>O total negociado é de: <?=$volumetotal?> = 100%</td>
-	    </tr>
 	</tbody>
 	</table>
-<p style="text-alig: center; font-size: 10px">As exchanges Negociecoins e TemBTC não são consideradas no cálculo da média ponderada por distorcer sozinhas toda a média devido ao alto volume no qual parte da comunidade brasileira de bitcoins não acredita que seja verdadeiro.</p>
 <br>
 <br>
 <br>
